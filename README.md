@@ -3,9 +3,11 @@
 This is another optional capstone project from the final course of the [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) on Coursera. 
 
 ## INTRODUCTION
-For this case study, I have been asked to perform many real-world tasks of a junior data analyst working in the marketing analyst team at Bellabeat, a high-tech manufacturer of heatlh-focused products for women. In order to answer the key business questions, I will follow the steps of the data analysis process: **ask**, **prepare**, **process**, **analyze**, **share**, and **act**.
+For this case study, I have been asked to perform many real-world tasks of a junior data analyst working in the marketing analyst team at Bellabeat, a high-tech manufacturer of heatlh-focused products for women. In order to answer the key business questions, I will follow the steps of the data analysis process: [**ask**](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study#step-1-ask), [**prepare**](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study#step-2-prepare), [**process**](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study#step-3-process), [**analyze**](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study#step-4-analyze), **share**, and **act**.
 
 ***MySQL Queries***:
+- [bellabeat_data_clean](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/blob/main/bellabeat_data_clean.sql)
+- [bellabeat_data_analyze](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/blob/main/bellabeat_data_analyze.sql)
 
 ***Data visualization***:
 
@@ -84,7 +86,8 @@ To account for easier import into MySQl, I did some initial cleaning of each fil
    - I added two new columns (total_active_minutes, total_active_hours) to dailyActivity_merged. The *total_active_minutes* column was found by adding the very_active_minutes, fairly_active_minutes, lightly_active_minutes, and sedentary_minutes columns in order to determine how many total minutes was spent. The *total_active_hours* column consists of the total_active_minutes but in hours and it was found by dividing the total_active_minutes by 60.
    
 ### 3b. Further Cleaning in MySQL
-**MySQL Query:**
+**MySQL Query:** [bellabeat_data_clean](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/blob/main/bellabeat_data_clean.sql)
+
 1. *Examination of Each Table*
    - Once the initial cleaning was complete in Excel, the files were uploaded to MySQL in the form of tables. Each table represented a single data file. 
    - In total, there were four tables and each table was first examined by: 1) determining the number of unique IDs and 2) the number of times each user logged their personal tracker information out of 31 days. 
@@ -99,11 +102,14 @@ To account for easier import into MySQl, I did some initial cleaning of each fil
    - In the hourly_calories_and_steps table, a *time_of_day* column was created in order to explore any differences that may exist among the hours of the day. 
 
 ## STEP 4: ANALYZE
-**MySQL Query**:  
+**MySQL Query**: [bellabeat_data_analyze](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/blob/main/bellabeat_data_analyze.sql)  
 
 The business task is to determine how consumers are using non-Bellabeat smart devices in order to design a new marketing strategy that can be applied to one of the Bellabeat products based on the insights found from analysis of non-Bellabeat smart devices. 
 
 **To examine how consumers are using non-Bellabeat smart devices I...**
 - Calculated the average of each column (total_steps, total_distance, very_active_minutes, etc.) in the daily_activity table by the day of the week and the month 
-- Calculated the sum and average of each column (calories and steps) in the hourly_calories_and_steps table by the time of day 
+- Calculated the sum and average of each column (calories and steps) in the hourly_calories_and_steps table by the time of day
+
+## STEP 5: SHARE
+**Data Visualization:**
 
