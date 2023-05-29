@@ -50,11 +50,11 @@ FROM hourly_calories_and_steps;
 
 -- Find the sum and averages of each variable by time of day 
 SELECT
-	time_of_day,
+    time_of_day,
     SUM(calories) AS sum_cal,
     AVG(calories) AS avg_cal,
     SUM(step_total) AS sum_step,
-	AVG(step_total) AS avg_step
+    AVG(step_total) AS avg_step
 FROM hourly_calories_and_steps
 GROUP BY time_of_day
 ORDER BY sum_cal DESC;
