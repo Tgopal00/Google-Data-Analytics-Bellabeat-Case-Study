@@ -38,4 +38,16 @@ Sršen encourages me to use public data that explores users' daily habits. The d
 - Consists of 18 files that contains personal tracker information from 30 fitbit users which includes, but is not limited to: minute-level output for physical activity, heart rate, and sleep monitoring, daily activity, and steps.
 
 ### 2c. Does the Data ROCCC?
+A good data source is: **R**eliable, **O**riginal, **C**omprehensive, **C**urrent, and **C**ited. In other words, it ROCCC's! I will examine the dataset based on these five factors to determine if the dataset is a good source of data.
+- **Reliable** 
+   - LOW - The dataset consists of a small sample of fitbit users which will weaken the analysis. In addition to this, some of the files in the dataset do not contain information for all the fitbit users. For example, one of the files contains data on only eight fitbit users.
+- **Orginal**
+  - LOW - A third party provider, Amazon Mechanical Turk, is used to collect the data 
+- **Comprehensive**
+  - LOW to MED - The dataset contains some factors (e.g. sleep, activity) that are important to Bellabeat products and which will be significant in the analysis phase. However, the dataset is still with limitations since it does not consider other factors (e.g. stress, hydration levels, reproductive health, diet, etc.) which would strengthen the analysis. 
+- **Current**
+  - LOW - The data was collected in 2016, which means this dataset is over 7 years old. 
+- **Cited**
+  - LOW - The data was collected by Amazon Mechanical Turk, a third party provider. While the dataset was made available through [Mobius](https://www.kaggle.com/arashnic), and is expected to be updated annually, the dataset is still outdated. 
+  
 ### 2d. Final Selection of Data Files 
