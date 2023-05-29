@@ -71,4 +71,17 @@ Four files were considered for the proceeding steps.
 
 ## STEP 3: PROCESS
 ### 3a. Initial Cleaning in Excel
+To account for easier import into MySQl, I did some initial cleaning of each file in Excel by completing the following:
+1. *Checked if each column had the appropriate data types*
+   - A custom date consistent with MySQL had to be applied to the date columns in each file. In the dailyActivity_merged.csv and sleepDay_merged.csv, a custom date format ("YYYY-MM-DD") was applied to the activity_date and sleep_day column, respectively. In the hourlyCalories_merged.csv and hourlySteps_merged.csv, a custom datetime format ("YYYY-MM-DD hh:mm:ss") was applied to the activity_hour column. 
+   - The rest of the columns in each file consisted of the appropriate data types.
+
+2. *Checked for missing/null values*
+   - There were no missing or null values.
+
+3. *Created additional columns*
+   - I added two new columns (total_active_minutes, total_active_hours) to dailyActivity_merged.csv. The *total_active_minutes* column was found by adding the very_active_minutes, fairly_active_minutes, lightly_active_minutes, and sedentary_minutes columns in order to determine how many total minutes was spent. The *total_active_hours* column consists of the total_active_minutes but in hours and it was found by dividing the total_active_minutes by 60.
+   
 ### 3b. Further Cleaning in MySQL
+**MySQL Query:**
+
