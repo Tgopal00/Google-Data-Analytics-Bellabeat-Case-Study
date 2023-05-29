@@ -73,15 +73,30 @@ Four files were considered for the proceeding steps.
 ### 3a. Initial Cleaning in Excel
 To account for easier import into MySQl, I did some initial cleaning of each file in Excel by completing the following:
 1. *Checked if each column had the appropriate data types*
-   - A custom date consistent with MySQL had to be applied to the date columns in each file. In the dailyActivity_merged.csv and sleepDay_merged.csv, a custom date format ("YYYY-MM-DD") was applied to the activity_date and sleep_day column, respectively. In the hourlyCalories_merged.csv and hourlySteps_merged.csv, a custom datetime format ("YYYY-MM-DD hh:mm:ss") was applied to the activity_hour column. 
+   - A custom date consistent with MySQL had to be applied to the date columns in each file. In dailyActivity_merged and sleepDay_merged, a custom date format ("YYYY-MM-DD") was applied to the activity_date and sleep_day column, respectively. In hourlyCalories_merged and hourlySteps_merged, a custom datetime format ("YYYY-MM-DD hh:mm:ss") was applied to the activity_hour column. 
    - The rest of the columns in each file consisted of the appropriate data types.
+   - **NOTE:** The data files only contains data from April 12, 2016 to May 12, 2016, when it was mentioned that the dataset would contain data starting from *March 12, 2016*. 
 
 2. *Checked for missing/null values*
    - There were no missing or null values.
 
 3. *Created additional columns*
-   - I added two new columns (total_active_minutes, total_active_hours) to dailyActivity_merged.csv. The *total_active_minutes* column was found by adding the very_active_minutes, fairly_active_minutes, lightly_active_minutes, and sedentary_minutes columns in order to determine how many total minutes was spent. The *total_active_hours* column consists of the total_active_minutes but in hours and it was found by dividing the total_active_minutes by 60.
+   - I added two new columns (total_active_minutes, total_active_hours) to dailyActivity_merged. The *total_active_minutes* column was found by adding the very_active_minutes, fairly_active_minutes, lightly_active_minutes, and sedentary_minutes columns in order to determine how many total minutes was spent. The *total_active_hours* column consists of the total_active_minutes but in hours and it was found by dividing the total_active_minutes by 60.
    
 ### 3b. Further Cleaning in MySQL
 **MySQL Query:**
+1. *Examination of Each Table*
+   - Once the initial cleaning was complete in Excel, the files were uploaded to MySQL in the form of tables. Each table represented a single data file. 
+   - In total, there were four tables and each table was first examined by: 1) determining the number of unique IDs and 2) the number of times each user logged their personal tracker information out of 31 days. 
+   - There were 33 unique IDs in the daily_activity, hourly_calories, and hourly_steps table, which is three more than the expected 30 users.
+   - There were 24 unique IDs in the sleep_day table which is six less than the expected 30 users. Because of this, the sleepDay_merged file was **not included** in the proceeding steps since there is not enough data in this file for a strong analysis. 
+   
+2. *Joining Tables*
+   - The hourly_calories and hourly_steps table was joined to create a new table called, hourly_calories_and_steps. This was done in order to examine the relationship between calories and steps on a hour to hour basis.
+   
+3. *Deleting Columns and Creating New Columns to Tables*
+   - In the daily_activity table, the tracker_distance and logged_activities_distance columns were dropped since they will not be relevant to the analysis. A *day_of_the_week* and *month* column were created in order to explore any differences that may exist between the days of the week or among the months. 
+   - In the hourly_calories_and_steps table, a *time_of_day* column was created in order to explore any differences that may exist among the hours of the day. 
 
+## STEP 4: ANALYZE
+**MySQL Query**: 
