@@ -99,4 +99,11 @@ To account for easier import into MySQl, I did some initial cleaning of each fil
    - In the hourly_calories_and_steps table, a *time_of_day* column was created in order to explore any differences that may exist among the hours of the day. 
 
 ## STEP 4: ANALYZE
-**MySQL Query**: 
+**MySQL Query**:  
+
+The business task is to determine how consumers are using non-Bellabeat smart devices in order to design a new marketing strategy that can be applied to one of the Bellabeat products based on the insights found from analysis of non-Bellabeat smart devices. 
+
+**To examine how consumers are using non-Bellabeat smart devices I...**
+- Calculated the average of each column (total_steps, total_distance, very_active_minutes, etc.) in the daily_activity table by the day of the week and the month 
+- Calculated the sum and average of each column (calories and steps) in the hourly_calories_and_steps table by the time of day 
+
