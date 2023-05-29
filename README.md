@@ -49,5 +49,26 @@ A good data source is: **R**eliable, **O**riginal, **C**omprehensive, **C**urren
   - LOW - The data was collected in 2016, which means this dataset is over 7 years old. 
 - **Cited**
   - LOW - The data was collected by Amazon Mechanical Turk, a third party provider. While the dataset was made available through [Mobius](https://www.kaggle.com/arashnic), and is expected to be updated annually, the dataset is still outdated. 
+
+Overall, the dataset is considered to be of poor quality and most likely will not be useful in producing strong recommendations for the company. 
   
 ### 2d. Final Selection of Data Files 
+Fifteen files were excluded from the proceeding steps.
+
+**Reasons for excluding 15 files include:** 
+- Some files did not seem useful in answering the business objectives
+- Some files had data on minute-level output which would be difficult to analyze
+- Some of the data found in multiple files (e.g. dailyCalories, dailySteps) were found combined in a single file (e.g. dailyActivities), so the file which had data separated into multiple files were not needed
+- Some files were inconsistent and did not include data on all of the fitbit users. For example, the weightLogInfo file contained data on only 8 users.
+
+Four files were considered for the proceeding steps.
+
+**Final Data Selection**
+1. dailyActivity_merged.csv
+2. hourlyCalories_merged.csv
+3. hourlySteps_merged.csv
+4. sleepDay_merged.csv
+
+## STEP 3: PROCESS
+### 3a. Initial Cleaning in Excel
+### 3b. Further Cleaning in MySQL
