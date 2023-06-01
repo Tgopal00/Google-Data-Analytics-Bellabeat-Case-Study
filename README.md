@@ -7,7 +7,6 @@ For this case study, I have been asked to perform many real-world tasks of a jun
 
 ***MySQL Queries***:
 - [bellabeat_data_clean](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/blob/main/bellabeat_data_clean.sql)
-- [bellabeat_data_analyze](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/blob/main/bellabeat_data_analyze.sql)
 
 ***Data visualization***:
 
@@ -102,7 +101,7 @@ To account for easier import into MySQl, I did some initial cleaning of each fil
    - In the hourly_calories_and_steps table, a *time_of_day* column was created in order to explore any differences that may exist among the hours of the day. 
 
 ## STEP 4: ANALYZE
-**MySQL Query**: [bellabeat_data_analyze](https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/blob/main/bellabeat_data_analyze.sql)  
+**MySQL Query**: 
 
 The business task is to determine how consumers are using non-Bellabeat smart devices in order to design a new marketing strategy that can be applied to one of the Bellabeat products based on the insights found from analysis of non-Bellabeat smart devices. 
 
