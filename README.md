@@ -109,6 +109,7 @@ The business task is to determine how consumers are using non-Bellabeat smart de
 **To examine how consumers are using non-Bellabeat smart devices I...**
 - Calculated the average of each column (total_steps, total_distance, very_active_minutes, etc.) in the daily_activity table by the day of the week and the month 
 - Calculated the sum and average of each column (calories and steps) in the hourly_calories_and_steps table by the time of day
+- Determined the total number of times users logged their activity on each day
 
 ## STEP 5: SHARE
 **Data Visualization:**
