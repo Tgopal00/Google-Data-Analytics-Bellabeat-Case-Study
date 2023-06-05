@@ -112,5 +112,23 @@ The business task is to determine how consumers are using non-Bellabeat smart de
 - Determined the total number of times users logged their activity on each day
 
 ## STEP 5: SHARE
-**Data Visualization:**
+**Data Visualization:** Check out my data viz on [Tableau](https://public.tableau.com/app/profile/tishmattie.gopal/viz/GoogleDataAnalyticsBellabeatCaseStudy/GoogleDataAnalyticsBellabeatCaseStudy)
+
+While the dataset came with a few limitations, I was still able to gather some findings on how consumers are using non-Bellabeat smart devices. Here I will further describe the findings of my analysis as well as necessary graphs and charts that help visualize trends/relationships found in the data.
+
+1. *Total number of times users logged their physical activity in the app throughout the week*
+  
+   <img width="544" alt="Screenshot 2023-06-05 at 12 30 52 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/3ff1fca1-49f9-4f80-9c0c-3655b4b1d2b3">
+
+   Based on the graph, Tuesday, Wednesday, and Thursday are the days which users logged their activity the most. The greatest total logs, which is 152, occurs on Tuesday. The weekends consist of some of the lowest user logs. This could be because people might have various obligations or weekend plans other than engaging in physical activity. 
+
+2. *Breakdown of total physical activity minutes*
+
+   <img width="357" alt="Screenshot 2023-06-05 at 12 33 06 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/67923309-acfd-4904-a336-e50f33e5ae41">
+
+   Out of the total physical activity minutes found, 81% of those minutes is dedicated to being sedentary, which is time mainly being spent seated. This leaves the remaining 19% of the total minutes to being fairly active, lightly active, and very active. Overall, this shows that most of the users spend their time living a sedentary lifestyle with minimal physical activity. This can be due to having jobs that requires sitting for long periods of time. 
+   
+3. *Correlation between total steps and calories burned*
+
+   <img width="942" alt="Screenshot 2023-06-05 at 12 32 54 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/cbbb53f8-8301-41cb-8144-2fee9e302d00">
 
