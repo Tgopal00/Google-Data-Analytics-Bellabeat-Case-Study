@@ -17,7 +17,7 @@ For this case study, I have been asked to perform many real-world tasks of a jun
 ### 1a. Background
 Bellabeat, a high-tech company that manufactures health-focused smart products, was founded in 2013 by Urška Sršen and Sando Mur. Bellabeat smart products collect data on activity, sleep, stress, reproductive health, and more to empower women with knowledge about their own health and habits. 
 
-Sršen believes that an analysis of Bellabeat's available consumer data would reveal more opportunities for growth. She has asked the marketing analytics team to focus on a Bellabeat product and analyze smart device usage data of non-Bellabeat smart devices in order to gain insight into how people are already using their smart devices. Then, using this information, she would like high-level recommendations for how these trends can inform Bellabeat marketing strategy.
+Sršen believes that an analysis of Bellabeat's available consumer data would reveal more opportunities for growth. She has asked the marketing analytics team to focus on a Bellabeat product (Bellabeat app, Leaf, Time, or Spring) and analyze smart device usage data of non-Bellabeat smart devices in order to gain insight into how people are already using their smart devices. Then, using this information, she would like high-level recommendations for how these trends can inform Bellabeat marketing strategy.
 
 ### 1b. Business Objectives
 1. What are some trends in smart device usage?
@@ -114,7 +114,7 @@ The business task is to determine how consumers are using non-Bellabeat smart de
 ## STEP 5: SHARE
 **Data Visualization:** Check out my data viz on [Tableau](https://public.tableau.com/app/profile/tishmattie.gopal/viz/GoogleDataAnalyticsBellabeatCaseStudy/GoogleDataAnalyticsBellabeatCaseStudy)
 
-While the dataset came with a few limitations, I was still able to gather some findings on how consumers are using non-Bellabeat smart devices. Here I will further describe the findings of my analysis as well as necessary graphs and charts that help visualize trends/relationships found in the data.
+Here I will further describe the findings of my analysis as well as necessary graphs and charts that help visualize trends/relationships found in the data.
 
 1. *Total number of times users logged their physical activity in the app throughout the week*
   
@@ -132,3 +132,26 @@ While the dataset came with a few limitations, I was still able to gather some f
 
    <img width="942" alt="Screenshot 2023-06-05 at 12 32 54 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/cbbb53f8-8301-41cb-8144-2fee9e302d00">
 
+   There is a positive correlation found between total steps and calories burned. Most users cluster around 0 to 10,000 steps. As the total steps approach 15,000 and onwards, there is more spread in the data, most likely because very few people are taking this many steps.
+   
+4. *Breakdown of total average steps taken by time of day*
+
+   <img width="987" alt="Screenshot 2023-06-05 at 12 32 27 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/d3521a37-03e6-4655-9603-c7720d8eb69f">
+
+   Based on the graph, 6PM and 7PM is the time at which the total average steps is highest. This could be due to that fact that most people are off from work by this time and so they have more time to engage in physical actvity. Around 12PM to 2PM is the second highest peak for total average steps and this could be because people have their lunch breaks around this time and probably go outside for works, to get food, etc. 
+   
+## STEP 6: ACT
+### 6a. What are the main trends/relationships identified in the analysis?
+- A majority (81%) of users engage in sedentary activity
+- Users prefer to track their activities during the middle of the week and not so much on the weekends
+- Most users walk 0K to 10K steps
+- The total average steps taken are the highest in the early and late afternoon
+
+### 6b. How can these trends apply to Cyclistic's new marketing strategy?
+After identifying how users use non-Bellabeat smart devices as well as the basic physical lifestyle users live, a new marketing strategy can be applied to the *Bellabeat app*, which provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. The following marketing strategy recommendations should be considered:
+
+1. Consider sending app notifications when users have been inactive for long periods of time 
+2. Add app features which allow users to create 'daily' or 'weekly' fitness goals. For example, a daily goal could be walking 2,000 steps in a day and then building that goal overtime
+
+### 6c. Next Steps/Future Directions 
+For the future growth of Bellabeat, it would be important to user better quality data for analysis since the dataset used for this case study was out of date, examined a very small sample of users, and did not consist of complete data. In addition to this, Bellabeat should consider using data gathered from their own users since that will contain of more data pertaining to women themselves. Once again the dataset used in this case study was lacking since it did not consider data in regards to menstrual activity, mindfulness, etc., all of which Bellabeat tracks. 
