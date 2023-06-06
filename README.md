@@ -117,27 +117,27 @@ The business task is to determine how consumers are using non-Bellabeat smart de
 Here I will further describe the findings of my analysis as well as necessary graphs and charts that help visualize trends/relationships found in the data.
 
 1. *Total number of times users logged their physical activity in the app throughout the week*
-  
-   <img width="544" alt="Screenshot 2023-06-05 at 12 30 52 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/3ff1fca1-49f9-4f80-9c0c-3655b4b1d2b3">
+
+   <img width="544" alt="Screenshot 2023-06-05 at 12 30 52 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/ec33bb72-bd28-460f-b9f0-65b40672343f">
 
    Based on the graph, Tuesday, Wednesday, and Thursday are the days which users logged their activity the most. The greatest total logs, which is 152, occurs on Tuesday. The weekends consist of some of the lowest user logs. This could be because people might have various obligations or weekend plans other than engaging in physical activity. 
 
 2. *Breakdown of total physical activity minutes*
 
-   <img width="357" alt="Screenshot 2023-06-05 at 12 33 06 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/67923309-acfd-4904-a336-e50f33e5ae41">
+   <img width="357" alt="Screenshot 2023-06-05 at 12 33 06 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/fbec9e42-01ae-4ab7-9ad6-54ec3389cc8c">
 
    Out of the total physical activity minutes found, 81% of those minutes is dedicated to being sedentary, which is time mainly being spent seated. This leaves the remaining 19% of the total minutes to being fairly active, lightly active, and very active. Overall, this shows that most of the users spend their time living a sedentary lifestyle with minimal physical activity. This can be due to having jobs that requires sitting for long periods of time. 
    
 3. *Correlation between total steps and calories burned*
 
-   <img width="942" alt="Screenshot 2023-06-05 at 12 32 54 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/cbbb53f8-8301-41cb-8144-2fee9e302d00">
+   <img width="942" alt="Screenshot 2023-06-05 at 12 32 54 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/bd3ddd96-a999-423f-8275-2cf58ee2eb1d">
 
    There is a positive correlation found between total steps and calories burned. Most users cluster around 0 to 10,000 steps. As the total steps approach 15,000 and onwards, there is more spread in the data, most likely because very few people are taking this many steps.
    
 4. *Breakdown of total average steps taken by time of day*
 
-   <img width="987" alt="Screenshot 2023-06-05 at 12 32 27 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/d3521a37-03e6-4655-9603-c7720d8eb69f">
-
+   <img width="987" alt="Screenshot 2023-06-05 at 12 32 27 PM" src="https://github.com/Tgopal00/Google-Data-Analytics-Bellabeat-Case-Study/assets/118848690/cbaf7b1a-c26f-41f0-a050-2b32d1dbb82e">
+   
    Based on the graph, 6PM and 7PM is the time at which the total average steps is highest. This could be due to that fact that most people are off from work by this time and so they have more time to engage in physical actvity. Around 12PM to 2PM is the second highest peak for total average steps and this could be because people have their lunch breaks around this time and probably go outside for a walk, to get food, etc. 
    
 ## STEP 6: ACT
